@@ -15,6 +15,6 @@ concurrency:
 
 jobs:
   checks:
-    uses: KAMAHORO123/rssb-devops/.github/workflows/node-pr-checks.yaml@v1.0.0
+    uses: KAMAHORO123/rssb-devops/.github/workflows/node-pr-checks.yaml@v1.0.1
     with:
       images: '[{"name": ".", "context": ".", "dockerfile": "Dockerfile", "target": "runtime"}]'
