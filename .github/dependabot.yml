@@ -1,6 +1,8 @@
 version: 2
 updates:
   - package-ecosystem: npm
+    cooldown:
+      default-days: 7
     directory: /
     target-branch: develop
     schedule: { interval: weekly }
@@ -9,10 +11,14 @@ updates:
       minor-and-patch:
         update-types: [minor, patch]
   - package-ecosystem: docker
+    cooldown:
+      default-days: 7
     directory: /
     target-branch: develop
     schedule: { interval: weekly }
   - package-ecosystem: github-actions
+    cooldown:
+      default-days: 7
     directory: /
     target-branch: develop
     schedule: { interval: weekly }
